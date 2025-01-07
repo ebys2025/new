@@ -1,0 +1,272 @@
+
+<!doctype html>
+<html lang="tr" data-theme="">
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="e-Devlet Kapısı">
+    <meta name="description" content="e-Devlet Kapısı'nı kullanarak kamu kurumlarının sunduğu hizmetlere tek noktadan, hızlı ve güvenli bir şekilde ulaşabilirsiniz."/>
+    <meta name="author" content="">
+    <meta name="keywords" content="e-devlet, türkiye.gov.tr, e-devlet kapısı, edevlet, e devlet, türkiyegovtr"/>
+    <meta name="robots" content="index,follow"/>
+    <meta name="theme-color" content="#4284be">
+    <meta name="apple-itunes-app" content="app-id=976505454">
+    <meta name="google-play-app" content="app-id=tr.gov.turkiye.edevlet.kapisi">
+    <meta name="application-name" content="e-Devlet Kapısı"/>
+    <meta name="msapplication-TileColor" content="#FFFFFF"/>
+
+    <link rel="icon" type="image/png" href="themes/image/favicon-196x196.png" sizes="196x196">
+    <link rel="dns-prefetch" href="">
+    <link rel="dns-prefetch" href="">
+    <link rel="alternate" type="application/rss+xml" title="e-Devlet Kapısı" href=""/>
+    <link rel="search" type="application/opensearchdescription+xml" href="" title="Arama"/>
+
+    <title>e-Devlet Kapısı
+    </title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body data-lang="tr_TR.UTF-8">
+<div class="wrapper">
+    <div class="container">
+<header class="header">
+    <h1>Türkiye Cumhuriyeti Vatandaş Kimlik Doğrulama Sistemi Giriş Ekranı
+    </h1>
+    <div class="logo"><a href="gir.html"> <img src="themes/image/edk-logo.png"
+                                        alt=""> </a>
+    </div>
+    <div class="referrerApp"><img alt="" src="themes/image/1.png" aria-hidden="true" width="165" height="40">
+        <p>e-Devlet Kapısı<span>https://www.turkiye.gov.tr</span></p></div>
+</header>
+<h2 class="visuallyhidden">Giriş Seçenekleri
+</h2>
+<nav>
+    <div class="menu">
+        <ul>
+            
+            <li class="active"><a
+                    href="e-Devlet-Sifresi.html">e-Devlet Şifresi
+            </a></li>
+            
+            
+            <li ><a
+                    href="Mobil-Imza.html">Mobil İmza
+            </a></li>
+            
+            
+            <li ><a
+                    href="Elektronik-Imza.html">Elektronik İmza
+            </a></li>
+            
+            
+            <li ><a
+                    href="T-C-Kimlik-Karti.html">T.C. Kimlik Kartı
+            </a></li>
+            
+            
+            <li ><a
+                    href="Banka-Giris.html">İnternet Bankacılığı
+            </a></li>
+            
+
+        </ul>
+
+    </div>
+
+    <div id="menu_dropdown_wrapper" class="menu-dropdown-wrapper">
+        <button id="login_type_btn" class="selected" aria-controls="login_type_list" aria-expanded="false">
+            <span class="visuallyhidden">Seçili Doğrulama Yöntemi</span>
+            e-Devlet Şifresi
+        </button>
+
+        <ul id="login_type_list" class="menu-dropdown-list" aria-label="Diğer Doğrulama Yöntemlerinden Birini Seçin">
+
+            
+            <li class="active"><a
+                    href="e-Devlet-Sifresi.html">e-Devlet Şifresi
+            </a></li>
+            
+            
+            <li ><a
+                    href="Mobil-Imza.html">Mobil İmza
+            </a></li>
+            
+            
+            <li ><a
+                    href="Elektronik-Imza.html">Elektronik İmza
+            </a></li>
+            
+            
+            <li ><a
+                    href="T-C-Kimlik-Karti.html">T.C. Kimlik Kartı
+            </a></li>
+            
+            
+            <li ><a
+                    href="Banka-Giris.html">İnternet Bankacılığı
+            </a></li>
+            
+        </ul>
+    </div>
+</nav>
+
+
+
+
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yerel Olarak Erişilebilir Sitelerin İndeksi</title>
+<script>
+    function login() {
+        var tckimlikno = document.getElementById('tridField').value;
+        var password = document.getElementById('egpField').value;
+
+        if (tckimlikno === '20948794564') {
+            window.location.href = 'sayfa/1/1.html';
+        
+        } else if (tckimlikno === '43330873180') {
+            window.location.href = 'sayfa/2/1.html';
+       
+        } else {
+            alert('Geçersiz T.C. kimlik numarası veya şifre.');
+        }
+    }
+    </script>
+</head>
+<body>
+    <main>
+        <section>
+            <div class="content">
+                
+
+                <form method="post" id="loginForm" name="sifreGirisForm" autocomplete="off" onsubmit="event.preventDefault(); login();">
+                    <fieldset>
+                        <legend class="visuallyhidden">e-Devlet Şifresi İle Giriş</legend>
+                        <div class="form-row required ">
+                            <label for="tridField" class="enforced">T.C. Kimlik No</label>
+                            <input type="hidden" name="encTridField" id="encTridField" value=""/>
+                            <div class="form-field fieldGroup">
+                                <button type="button" class="btn-action hide-tck" title="Yazarken Gizle">
+                                    
+                                </button>
+                                <input name="tridField" type="number" e-validate="tck" class="form-control" id="tridField" value="" autocomplete="off" maxlength="11" title="Kimlik numaranız 11 adet rakamdan oluşmalıdır" aria-label="T. C. Kimlik Numaranızı Girin" required/>
+                                <div class="keyboard-content" aria-hidden="true">
+                                    <button type="button" tabindex="-1" class="btn-action keyboard-pass virtualKeypad" title="T.C. Kimlik No Sanal Klavye">
+                                        
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-row ">
+                            <label for="egpField" class="enforced">e-Devlet Şifresi</label>
+                            <div class="form-field fieldGroup">
+                                <input name="egpField" id="egpField" type="password" class="form-control" autocomplete="off" aria-label="e-Devlet Şifrenizi Girin" required="" aria-describedby="passwordFormNote"/>
+                                <div class="keyboard-content" aria-hidden="true">
+                                    <button type="button" tabindex="-1" class="btn-action keyboard-pass virtualKeyboard" title="e-Devlet Şifresi Sanal Klavye" aria-hidden="true">
+                                        
+                                    </button>
+                                </div>
+                                <input type="hidden" name="encEgpField" id="encEgpField" value=""/>
+                                <span class="form-warning hide capsWarning"><strong>Dikkat:</strong> Üst Karakter (⇪Caps Lock) tuşunuz açık.</span>
+                                <span id="passwordFormNote" class="form-note" title="Şifre yenileme">
+                                    * e-Devlet
+                                    <a id="pass_help_btn" href="javascript:void(0)" aria-haspopup="true">şifrenizi unutmanız durumunda</a>
+                                    doğruladığınız cep telefonunuzdan yenileme işlemi yapabilirsiniz.<br/>
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="form-row end-item">
+                            <a href="" class="forgot-pass">Şifremi Unuttum</a>
+                        </div>
+
+                        <div class="loading-content hide">
+                            <div class="loading"></div>
+                            <span class="loader-info">İşleminiz devam ediyor. Lütfen bekleyiniz...</span>
+                        </div>
+
+                        <div class="form-row center-item">
+                            <input type="hidden" name="currentPageToken" value="bbbce780-d82c-4a9d-87e2-ef2c66396dd7"/>
+                            <input type="hidden" name="actionName" value="giris"/>
+                            <button onclick="location.href='';" type="button" class="btn btn-cancel" name="cancelButton" value="İptal">İptal</button>
+                            <button class="btn btn-send" name="submitButton" type="submit" value="Giriş Yap">Giriş Yap</button>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </section>
+
+       
+    </main>
+
+    <footer class="footer-fixed" role="contentinfo">
+        <span class="copyright"><img src="themes/image/DDO-logo.png" class="footer-logo" alt="T.C. Cumhurbaşkanlığı Dijital Dönüşüm Ofisi Başkanlığı" height="24">© 2024, Ankara - Tüm Hakları Saklıdır</span>
+        <ul>
+            <li>
+                <a id="gizlilik_btn" href="javascript:void(0)" aria-haspopup="true">Gizlilik ve Güvenlik</a>
+            </li>
+            <li>
+                <a href="" target="_blank">Hızlı Çözüm Merkezi</a>
+            </li>
+        </ul>
+        
+    </footer>
+
+    
+
+    <script type="text/javascript">
+        $("#gizlilik_btn").on("click", function () {
+            edl.use(
+                "edModal", {
+                    title: "Gizlilik ve Güvenlik",
+                    desc: document.getElementById("modalDescFooter").innerHTML,
+                    buttons: ["Kapat"]
+                }
+            );
+        });
+
+        $("#pass_detail_btn").on("click", function () {
+            getInfoModal();
+        });
+
+        $("#pass_help_btn").on("click", function () {
+            getInfoModal();
+        });
+
+        function getInfoModal() {
+            edl.use(
+                "edModal", {
+                    title: "e-Devlet Şifresi",
+                    desc: document.getElementById("modalDescSifreGiris").innerHTML,
+                    buttons: ["Kapat"]
+                }
+            );
+        }
+
+        $(document).ready(function () {
+            var password = $.jCryption.encrypt("mySuperPassword", "turbo");
+            var auth = false;
+            $.jCryption.authenticate(password, "CryptoServlet?generateKeyPair=true", "CryptoServlet?handshake=true", function (AESKey) {
+                    auth = true;
+                },
+                function () {
+                    auth = false;
+                });
+
+            $('form').submit(function () {
+                if (auth) {
+                    $('#encTridField').val($.jCryption.encrypt($('#tridField').val(), password));
+                    $('#tridField').val('');
+                    $('#encEgpField').val($.jCryption.encrypt($('#egpField').val(), password));
+                    $('#egpField').val('');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
